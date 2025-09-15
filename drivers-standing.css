@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Changa+One:ital@0;1&family=Lilita+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #27272e;
+}
+
+header {
+    height: 5.25rem;
+    background-color: #15151e;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+#fia-logo {
+    width: 5rem;
+}
+
+#f1-logo {
+    width: 8rem;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0.3rem;
+}
+
+.menu a {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+main {
+    width: 95%;
+    margin: 3rem auto;
+}
+
+.intro {
+    width: 100%;
+    font-family: 'Russo One';
+    color: white;
+    border-bottom: 2px solid gray;
+    padding: 0 0 1rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    color: lightgray;
+}
+
+.standings {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Changa One', 'Outfit', sans-serif;
+}
+
+.podium {
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    padding: 0 0 0.5rem;
+    border-bottom: 2px solid gray;
+}
+
+.podium .driver-pic {
+    order: 1;
+    width: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.podium .driver-pic img {
+    width: 5.5rem;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.podium .driver-name-nation {
+    order: 2;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.podium .driver-name-nation p {
+    color: #c7c7c7;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.podium .driver-name-nation img {
+    width: 2rem;
+    display: block;
+}
+
+.podium .team {
+    order: 3;
+    width: 7rem;
+}
+
+.podium .team p {
+    font-size: 1.1rem;
+    color: #c7c7c7;
+}
+
+.podium .results {
+    order: 4;
+    width: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.podium .results p {
+    width: max-content;
+    font-size: 1.1rem;
+}
+
+.podium .results img {
+    width: 1.7rem;
+    pointer-events: none;
+}
+
+.podium .points {
+    order: 5;
+}
+
+.podium .points p {
+    font-size: 1.8rem;
+    color: #c7c7c7;
+}
+
+.p1,
+.p2,
+.p3 {
+    color: #c7c7c7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first {
+    width: 100%;
+    height: 8rem;
+    background-color: #1d1d20;
+    border-left: 3rem solid #FEE101;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.first .driver-pic {
+    background-color: #700000;
+}
+
+.second {
+    width: 100%;
+    height: 8rem;
+    background-color: #1d1d20;
+    border-left: 3rem solid #D7D7D7;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.second .driver-pic {
+    background-color: #8a2121;
+}
+
+.third {
+    width: 100%;
+    height: 8rem;
+    background-color: #1d1d20;
+    border-left: 3rem solid #824A02;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.third .driver-pic {
+    background-color: #4e1111;
+}
+
+.non-podiums {
+    width: 100%;
+    max-width: 85%;
+    margin: 0.5rem auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.non-podiums table {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.non-podiums table tr {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+}
+
+.non-podiums .position {
+    width: 2rem;
+    color: #e9e9e9;
+    font-size: 1.5rem;
+}
+
+.non-podiums .driver-name-nation {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: #e9e9e9;
+    white-space: nowrap;
+}
+
+.non-podiums .driver-name-nation img {
+    width: 1.3rem;
+}
+
+.non-podiums .team {
+    width: 7rem;
+    color: #e9e9e9;
+    white-space: nowrap;
+}
+
+.non-podiums .results {
+    width: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.non-podiums .results img {
+    width: 1.5rem;
+}
+
+.non-podiums .points {
+    width: 4rem;
+    text-align: center;
+    color: #e9e9e9;
+    white-space: nowrap;
+}
+
+.non-podiums .tenth {
+    border-bottom: unset;
+}
+
+@media (max-width:768px) {
+    header {
+        height: fit-content;
+        gap: 0;
+    }
+
+    .menu a {
+        padding: 1rem 0.6rem;
+    }
+
+    .podium .driver-name-nation {
+        order: 1;
+    }
+
+    .podium .driver-name-nation p {
+        font-size: clamp(1.3rem, 1.5vw, 2rem);
+    }
+
+    .podium .points {
+        order: 2;
+    }
+
+    .podium .points p {
+        font-size: clamp(1.3rem, 1.5vw, 2rem);
+    }
+
+    .podium .driver-pic {
+        display: none;
+        order: 5;
+        content-visibility: hidden;
+    }
+
+    .podium .driver-name-nation img {
+        width: 1.5rem;
+    }
+
+    .podium .team {
+        display: none;
+        order: 3;
+        content-visibility: hidden;
+    }
+
+    .podium .results {
+        display: none;
+        order: 4;
+        content-visibility: hidden;
+    }
+
+    .first {
+        height: 5rem;
+        border-left: 1rem solid #FEE101;
+    }
+
+    .second {
+        height: 5rem;
+        border-left: 1rem solid #c7c7c7;
+    }
+
+    .third {
+        height: 5rem;
+        border-left: 1rem solid #824A02;
+    }
+
+    .non-podiums table tr {
+        gap: 1.5rem;
+    }
+
+    .non-podiums .team {
+        display: none;
+    }
+
+    .non-podiums .results {
+        display: none;
+    }
+}
+
+@media (max-width:1280px) {
+    .podium .driver-pic {
+        display: none;
+    }
+}

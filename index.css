@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #27272e;
+}
+
+header {
+    height: 5.25rem;
+    background-color: #15151e;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+#fia-logo {
+    width: 5rem;
+}
+
+#f1-logo {
+    width: 8rem;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0.3rem;
+}
+
+.menu a {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.main-header {
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid gray;
+}
+
+.main-header h1 {
+    font-family: 'Bebas Neue', 'Outfit', sans-serif;
+    font-size: 5rem;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.podiums {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.container {
+    width: 95%;
+    height: 97%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.driver-info {
+    width: 50%;
+    height: 60%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.driver-info h2 {
+    font-size: 3rem;
+    margin: 0;
+    cursor: default;
+}
+
+.driver-info p {
+    font-size: 1.1rem;
+    margin: 0.4rem 0;
+    cursor: default;
+}
+
+.driver-info .driver-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.driver-pic {
+    width: 50%;
+    height: 60%;
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    object-fit: cover;
+}
+
+.driver-nation-flag {
+    width: 100%;
+    height: 40%;
+    flex: content;
+    box-sizing: border-box;
+}
+
+.driver-nation-flag img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.second {
+    order: 1;
+    width: 24rem;
+    height: 32rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background: url(images/f2004.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    overflow: hidden;
+}
+
+.first {
+    order: 2;
+    width: 30rem;
+    height: 35rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background: url(images/sf-25.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    overflow: hidden;
+    margin: 0;
+}
+
+.third {
+    order: 3;
+    width: 24rem;
+    height: 32rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background: url(images/f138.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: fit-content;
+        gap: 0;
+    }
+
+    .menu a {
+        padding: 1rem 0.6rem;
+    }
+
+    .podiums {
+        flex-wrap: wrap;
+    }
+
+    .first {
+        order: 1;
+        width: 100%;
+    }
+
+    .second {
+        width: 100%;
+        order: 2;
+    }
+
+    .third {
+        width: 100%;
+        order: 3;
+    }
+}

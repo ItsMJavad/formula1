@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Changa+One:ital@0;1&family=Lilita+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #27272e;
+}
+
+header {
+    height: 5.25rem;
+    background-color: #15151e;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+#fia-logo {
+    width: 5rem;
+}
+
+#f1-logo {
+    width: 8rem;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0.3rem;
+}
+
+.menu a {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+main {
+    width: 95%;
+    margin: 3rem auto;
+}
+
+.intro {
+    width: 100%;
+    font-family: 'Russo One';
+    color: white;
+    border-bottom: 2px solid gray;
+    padding: 0 0 1rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    color: lightgray;
+}
+
+.intro .view-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.intro button {
+    width: max-content;
+    height: 2rem;
+    background-color: inherit;
+    color: rgb(211, 211, 211);
+    font-family: 'Outfit';
+    white-space: nowrap;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px rgb(24, 24, 24);
+    cursor: pointer;
+}
+
+.intro button:hover {
+    background-color: rgba(194, 194, 194, 0.2) !important;
+}
+
+.first-page {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.second-page,
+.third-page,
+.fourth-page,
+.fifth-page,
+.sixth-page,
+.seventh-page {
+    width: 80%;
+    margin: 2rem auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.race {
+    width: fit-content;
+    height: 13rem;
+    padding: 1rem 1rem;
+    background-color: #15151e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.race .track-img {
+    width: max-content;
+    height: 100%;
+}
+
+.race .track-img img {
+    width: 256px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.race .track-info {
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.race .track-info h2 {
+    flex: 0 0 100%;
+    margin: 1rem 0;
+    color: lightgray;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.track-info .track-name-best-lap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.track-info .track-name-best-lap p {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.track-name-best-lap .track-name {
+    height: max-content;
+    font-size: 1.1rem;
+    color: #cacaca;
+}
+
+.track-name-best-lap .best-lap {
+    flex: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.track-info .drivers-standing {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.drivers-standing .driver-names,
+.drivers-standing .driver-times {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.drivers-standing .driver-names p,
+.drivers-standing .driver-times p {
+    white-space: nowrap;
+    margin: 0.5rem 0;
+    color: #ecd698;
+    font-family: cursive;
+}
+
+.drivers-standing .driver-names p:first-child,
+.drivers-standing .driver-times p:first-child {
+    margin: 0 0 0.5rem;
+}
+
+.drivers-standing .driver-names {
+    align-items: flex-start;
+}
+
+.drivers-standing .driver-times {
+    align-items: flex-end;
+}
+
+.page-list {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.page-list button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(179, 179, 179, 0.4);
+    color: #15151e;
+    font-family: 'Bungee';
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.page-list button:hover {
+    background-color: rgba(179, 179, 179, 0.2) !important;
+}
+
+table {
+    display: none;
+    width: max-content;
+    max-width: 100%;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+table tr {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid gray;
+    white-space: nowrap;
+    font-family: 'Russo One';
+    color: rgb(189, 189, 189);
+}
+
+table .table-info {
+    color: #b3b3b3;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table tr .number {
+    text-align: center;
+    width: 5rem;
+}
+
+table tr .track-name {
+    width: 15rem;
+}
+
+table tr .track-nation {
+    width: 7rem;
+}
+
+table tr .time {
+    width: 4.6rem;
+}
+
+table tr .best-lap-time {
+    width: 17rem;
+}
+
+table tr .winner-name-nation {
+    flex: 1;
+}
+
+table tr:last-child {
+    border-bottom: unset;
+}
+
+@media (max-width:768px) {
+    header {
+        height: fit-content;
+        gap: 0;
+    }
+
+    .menu a {
+        padding: 1rem 0.6rem;
+    }
+
+    .first-page,
+    .second-page,
+    .third-page,
+    .fourth-page,
+    .fifth-page,
+    .sixth-page,
+    .seventh-page {
+        width: 100%;
+    }
+
+    .race {
+        width: 95%;
+        height: max-content;
+    }
+
+    .race .track-info {
+        gap: 0.5rem;
+    }
+
+    .race .track-img {
+        display: none;
+    }
+
+    .race .track-name-best-lap {
+        flex: 0 0 100%;
+    }
+
+    table,
+    table tbody {
+        width: 100%;
+    }
+
+    table tr {
+        width: 100%;
+        padding: 0 0.7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    table tr .track-name,
+    table tr .winner-name-nation {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    table tr .number,
+    table tr .track-nation,
+    table tr .time,
+    table tr .best-lap-time {
+        display: none;
+    }
+}
